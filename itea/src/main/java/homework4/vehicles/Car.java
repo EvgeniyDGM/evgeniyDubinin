@@ -4,11 +4,63 @@ import homework4.details.Engine;
 import homework4.professions.Driver;
 
 public class Car {
-    public String brand = "34";
-    public String type = "adsf";
-    public int weight = 324;
+    private String brand;
+    private String type;
+    private int weight;
     Driver driver;
     Engine engine;
+
+
+    public Car(String brand, String type, int weight, Driver driver, Engine engine) {
+        this.brand = brand;
+        this.type = type;
+        this.weight = weight;
+        this.driver = driver;
+        this.engine = engine;
+    }
+
+    public Car() {
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
     public void start() {
         System.out.println("Let's drive");
