@@ -3,10 +3,8 @@ package homework3;
 import java.util.Random;
 
 public class Homework3_1 {
-    public static void main(String[] args) {
 
-        int[] array = {15, 8, 24, 41, 9, 84};
-
+    public String isLuckyVerifying(int[] array) {
         Random random = new Random();
         int index = random.nextInt(array.length);
         int randomNumberFromArray = array[index];
@@ -18,10 +16,21 @@ public class Homework3_1 {
         System.out.println("Your number is " + randomNumberFromArray);
 
         if (randomNumberFromArray % 2 == 0) {
-            System.out.println("I am lucky");
+            return  "I am lucky";
         }
         else {
-            System.out.println("Run again");
+            return "Run again";
         }
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] array = {15, 8, 24, 41, 9, 84};
+
+        Homework3_1 isLucky = new Homework3_1();
+
+        isLucky.isLuckyVerifying(array);
+
     }
 }

@@ -7,18 +7,14 @@ public class FruitsAndVegetables {
     public static Map<String, String> deleteTheSameValuesFromTheMap(Map<String, String>  map) {
 
         Set<String> valuesList = new HashSet<>();
-
         Map<String, Integer> mapCopy = new HashMap<>();
-
         Map<String, String> mapOut = new HashMap<>();
 
 
         for (Map.Entry<String, String> pair : map.entrySet()) {
             String value = pair.getValue();
-
             valuesList.add(value);
         }
-
 
         for (String item : valuesList) {
             int amount = 1;
@@ -29,8 +25,6 @@ public class FruitsAndVegetables {
             }
         }
 
-
-
         for (Map.Entry<String, Integer> pair: mapCopy.entrySet() ) {
             for (Map.Entry <String, String> pairs : map.entrySet()) {
                 if (pair.getValue() < 2 && pairs.getValue().equals(pair.getKey())) {
@@ -39,16 +33,12 @@ public class FruitsAndVegetables {
             }
         }
 
-
         for (Map.Entry <String, String> pair : mapOut.entrySet()) {
             System.out.println(pair.getKey() + " is a/an " + pair.getValue());
 
         }
         return mapOut;
     }
-
-
-
 
     public static void main(String[] args) {
 
@@ -67,5 +57,6 @@ public class FruitsAndVegetables {
         map.put("Car", "BMW");
 
         FruitsAndVegetables.deleteTheSameValuesFromTheMap(map);
+
     }
 }
