@@ -53,17 +53,17 @@ public class TestCases {
 
 
         //----------------------------------------------------------------------------------------------------------------------
-        //Выбор даты - НЕ РАБОТАЕТ
-        /*WebElement birth = driver.findElement(By.id("dateOfBirthInput"));
+        //Выбор даты - пофиксил - Работает
+        WebElement birth = driver.findElement(By.id("dateOfBirthInput"));
         birth.click();
         WebElement monthElement = driver.findElement(By.className("react-datepicker__month-select"));
         Select selectMonth = new Select(monthElement);
-        selectMonth.selectByVisibleText("Jan");
+        selectMonth.selectByVisibleText("June");
         WebElement yearElement = driver.findElement(By.className("react-datepicker__year-select"));
         Select selectYear = new Select(yearElement);
         selectYear.selectByVisibleText("1976");
-        WebElement dayElement = driver.findElement(By.xpath("//*[contains(@class, 'react-datepickerday react-datepickerday--0"+ " 01" + "')]"));
-        dayElement.click();*/
+        WebElement dayElement = driver.findElement(By.xpath("//*[contains(@class, 'react-datepicker__day react-datepicker__day--0"+ "19" + "')]"));
+        dayElement.click();
         //------------------------------------------------------------------------------------------------------------------------
 
 

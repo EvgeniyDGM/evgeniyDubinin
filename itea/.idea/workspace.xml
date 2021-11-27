@@ -26,8 +26,8 @@
       <file leaf-file-name="TestCases.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/homework10/TestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="66" column="130" lean-forward="false" selection-start-line="66" selection-start-column="130" selection-end-line="66" selection-end-column="130" />
+            <state relative-caret-position="616">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -583,15 +583,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 01m 03s.xml">
-      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 17m 32s.xml">
-      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 18m 59s.xml">
-      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 19m 55s.xml">
       <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
     </history-entry>
@@ -613,13 +604,23 @@
     <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 37m 30s.xml">
       <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 47m 55s.xml">
+      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 50m 26s.xml">
+      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestCases_popIsAppeared - 2021.11.27 at 10h 50m 51s.xml">
+      <configuration name="TestCases.popIsAppeared" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -630,7 +631,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15325248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15325248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972437" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1207,8 +1208,8 @@ jse.executeScript(&quot;arguments[0].value = '12 Feb 1918'&quot;, dateOfBirth);
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/homework10/TestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="66" column="130" lean-forward="false" selection-start-line="66" selection-start-column="130" selection-end-line="66" selection-end-column="130" />
+        <state relative-caret-position="616">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
