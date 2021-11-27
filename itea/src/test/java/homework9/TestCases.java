@@ -18,9 +18,9 @@ public class TestCases {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
         WebDriverManager.chromedriver().setup(); //Чтобы не переживать, какая версия хрома используется
+        //или вместо WebDriverManager.chromedriver().setup(); можно использовать System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -34,7 +34,6 @@ public class TestCases {
 
     @Test
     public void joinButtonFunctionality() {
-
 
         //driver.navigate().to(URL); //он используется для перехода на конкретный веб-сайт , но он сохраняет историю браузера и файлы cookie, поэтому мы можем использовать кнопки вперед и назад для навигации между страницами во время кодирования Testcase
 
@@ -55,21 +54,6 @@ public class TestCases {
 
         Assert.assertEquals(driver.getWindowHandles().size(),2);
 
-        /*try {
-
-            String winHandleBefore = driver.getWindowHandle();
-
-            for(String winHandle : driver.getWindowHandles()){
-                driver.switchTo().window(winHandle);
-                String act = driver.getCurrentUrl();
-                System.out.println(act);
-            }
-        }catch(Exception e){
-            System.out.println("fail");
-        }*/
-
-
-
     }
 
     @Test
@@ -77,6 +61,7 @@ public class TestCases {
 
         driver.get(URL);
 
+        //String elementsCard = driver.findElement(By.xpath("//*[@class='card mt-4 top-card']//*[contains(text(),'Elements')]")).getText();
         String elementsCard = driver.findElement(By.xpath("//*[contains(h5,'Elements')]")).getText();
         String formsCard = driver.findElement(By.xpath("//*[contains(h5, 'Forms')]")).getText();
         String alersFrameAndWindowsCard = driver.findElement(By.xpath("//*[contains(h5, 'Alerts, Frame & Windows')]")).getText();
@@ -88,8 +73,6 @@ public class TestCases {
         Assert.assertEquals(alersFrameAndWindowsCard, "Alerts, Frame & Windows");
         Assert.assertEquals(widgetsCard, "Widgets");
         Assert.assertEquals(interactionsCard, "Interactions");
-
-
     }
 
     @Test
@@ -100,8 +83,6 @@ public class TestCases {
         String currentAddress = "Test str.1";
         String permanentAddress = "Test str.2";
 
-
-
         driver.get(URL);
         driver.findElement(By.xpath("//*[contains(h5,'Elements')]")).click();
         driver.findElement(By.xpath("//*[@class = 'btn btn-light '][@id = 'item-0']")).click();
@@ -111,21 +92,13 @@ public class TestCases {
         driver.findElement(By.xpath("//*[@class = 'col-md-9 col-sm-12']/textarea[@id = 'permanentAddress']")).sendKeys(permanentAddress);
         driver.findElement(By.xpath("//button[contains(@id, 'submit')]")).click();
 
-
-
         Map<String, String> map = new HashMap<>();
-
 
         List<WebElement> mylist = driver.findElements(By.xpath("//div[contains(@class, 'border col-md-12 col-sm-12')]/p"));
 
         for (WebElement element : mylist) {
-            String[] spl = element.getText().split(":");
-            for (int i = 0, j = spl.length / 2; j < spl.length; i++, j++) {
-                map.put(spl[i], spl[j]);
-            }
-
-            System.out.println(element.getText());
-
+            map.put(element.getText().split(":")[0], element.getText().split(":")[1]);
+            System.out.println(map);
         }
 
         Assert.assertEquals(map.containsValue(userName), true);
